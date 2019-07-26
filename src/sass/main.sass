@@ -1,0 +1,100 @@
+@import "normalize"
+@import "fonts"
+.header
+    display: flex
+    position: relative
+    align-items: center
+    justify-content: space-between
+    height: 60px
+    border-bottom: 1px solid #dae4f2
+    z-index: 1
+.breadcrumbs
+    display: flex
+    align-items: center
+    margin-left: 113px
+
+    svg
+        margin:
+            top: 2px
+            right: 12px
+            left: 12px
+.breadcrumbs__li
+    font-family: $roboto
+    font-size: 13px
+    cursor: pointer
+.account
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 140px
+    margin-right: 40px
+    font-family: $roboto
+    cursor: pointer
+    &__name
+        display: flex
+        justify-content: center
+        color: $headerColor
+        font-size: 14px
+    &__arr
+        margin-top: -1px
+        
+.aside
+    display: block
+    position: absolute
+    top: 0
+    width: 69px
+    height: 100vh
+    margin: 0 auto
+    background: #01134e
+    z-index: 1000
+
+    &__logo
+        svg
+            display: block
+                top: 16px
+            margin: auto
+            padding:
+            cursor: pointer
+.nav
+    margin-top: 65px
+
+.nav__item
+    display: flex
+    align-items: center
+    justify-content: center
+    &:first-child
+        margin-top: 20px
+    margin-top: 60px
+    svg
+        path
+            fill: rgb(128, 137, 166)
+            fill-opacity: 1
+.nav__item_active
+    &:before
+        display: block
+        position: absolute
+        left: 0
+        height: 48px
+        transition: 1s
+        border-left: 4px solid #0ad69c
+        content: ""
+    a
+        svg
+            path
+                fill: #fff
+                fill-opacity: 1
+
+.main
+    display: flex
+    justify-content: center
+    width: 100%
+    height: calc(100vh - 60px)
+    background: #f7f9fc
+
+.main__container
+    display: flex
+    width: 100%
+    margin-right: 50px
+    margin-left: 109px
+    padding-top: 50px
+    padding-bottom: 50px
